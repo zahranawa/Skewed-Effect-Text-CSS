@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image:
+        radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+        radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.text {
+
+    text-align: center;
+    margin: 250px 300px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.text span {
+    background: #fff;
+    width: 120px;
+    height: 120px;
+    display: block;
+    line-height: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0C2461;
+    font-size: 40px;
+    float: left;
+    transition: 0.5s;
+}
+
+.text:hover span:nth-child(odd) {
+    transform: skewY(-15deg);
+    box-shadow: 0 60px 20px rgba(255, 255, 255, .2);
+    background: #0C2461;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.text:hover span:nth-child(even) {
+    transform: skewY(+15deg);
+    box-shadow: 0 60px 20px rgba(255, 255, 255, .2);
+    background: #fff;
+    color: #0C2461;
+
+}
+
